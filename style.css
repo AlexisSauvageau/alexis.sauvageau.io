@@ -277,7 +277,7 @@ header.mainhead .controls{display:flex;gap:10px;align-items:center}
     margin:0 0 8px 0;
 }
 
-.modal p{
+.modal p, .modal li{
     color:var(--muted);
 }
 
