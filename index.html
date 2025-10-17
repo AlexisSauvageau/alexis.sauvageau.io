@@ -69,7 +69,10 @@
       <div class="modal-content-scroll">
         <h2 id="modalTitle">Titre</h2>
         <p id="modalDesc">Description</p>
-        <div style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap" id="modalEnterprise"></div>
+        <div id="modalTags">
+          <div style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap" id="modalEnterprise" class="tag"></div>
+          <div style="margin-top:12px;display:flex;gap:8px;flex-wrap:wrap" id="modalDates" class="tag"></div>
+        </div>
         
         <hr style="margin:16px 0;border:none;border-top:1px solid #ddd;">
 
@@ -89,10 +92,6 @@
         </section>
 
         <div id="modalImages" class="modal-images"></div>
-
-        <div style="display:flex;gap:10px;margin-top:14px;justify-content:space-between;align-items:center">
-          <div class="pill" id="modalYear">Année</div>
-        </div>
       </div>
     </div>
   </div>

@@ -5,12 +5,11 @@ let projects = [...initialProjects];
 
 const grid = document.getElementById('grid');
 const qInput = document.getElementById('q');
-const filters = document.querySelectorAll('[data-filter]');
 const backdrop = document.getElementById('backdrop');
 const modalTitle = document.getElementById('modalTitle');
 const modalDesc = document.getElementById('modalDesc');
 const modalEnterprise = document.getElementById('modalEnterprise');
-const modalYear = document.getElementById('modalYear');
+const modalDates = document.getElementById('modalDates');
 const modalTools = document.getElementById('modalTools');
 const modalToolsList = document.getElementById('modalToolsList');
 const modalLanguages = document.getElementById('modalLanguages');
@@ -58,10 +57,6 @@ function escapeHTML(s){
     return String(s).replace(/[&<>\"][\u00A0-\u9999<>&]/gim,function(i){return '&#'+i.charCodeAt(0)+';';});
 }
 
-function escapeInitials(s){ 
-    return s.split(' ').slice(0,2).map(w=>w[0]||'').join('').toUpperCase(); 
-}
-
 function renderGrid(list){
     grid.innerHTML='';
     if(list.length===0){ 
@@ -79,14 +74,15 @@ function openModal(id){
     }
     modalTitle.innerHTML = `<span class="lightblue">${p.title}</span> • ${p.type}`;
     modalDesc.textContent = p.desc; 
-    modalYear.textContent = p.year;
 
     if(p.enterprise){
-        modalEnterprise.innerHTML = `<div class="tag">${p.enterprise}</div>`;
+        modalEnterprise.innerText = p.enterprise;
     }
     else{
-        modalEnterprise.innerHTML = ``;
+       modalEnterprise.innerText = ""; 
     }
+
+    modalDates.innerText = p.dates;
 
     // Taille de l'équipe
     if (p.team && p.team > 0) {
