@@ -1,6 +1,21 @@
 export const initialProjects = [
     {
-        id: 1,
+        id: 10,
+        title: "ROM Hacking",
+        type: "Projet personnel",
+        desc: "Modification de la ROM du jeu Mario Kart DS, en implémentant mes propres textures, sons, et en personnalisant le code via désassembleur pour remplacer l'item 'Banane' par un nouvel item original.",
+        tags: ["C++","ROM"],
+        year: 2025,
+        dates: "octobre 2025 - novembre 2025",
+        area: 'OS',
+        icon: "icons/rom.svg",
+        team: 1,
+        languages: ["C++", "Assembleur"],
+        tools: ["MKDS Course Modifier (ouvrir la ROM du jeu et extraire ses fichiers)", "Nitro Studio (modifier les fichiers sonores de la ROM)", "Nitro Explorer (modifier la ROM en intégrant mes propres fichiers)"],
+        images: []
+    },
+    {
+        id: 9,
         title: "Application de Planning Poker",
         type: "Projet scolaire",
         enterprise: "Université Lumière Lyon 2",
@@ -16,7 +31,7 @@ export const initialProjects = [
         images: []
     },
     {
-        id: 2,
+        id: 8,
         title: "Systèmes embarqués",
         type: "CDD étudiant",
         enterprise: "Mini World Lyon",
@@ -29,10 +44,10 @@ export const initialProjects = [
         team: 1,
         languages: ["Python (Raspberry Linux)", "C# (Raspberry Windows)", "C (Arduino)", "XML (communication réseau)"],
         tools: ["Raspberry Pi Imager (installer un OS Linux sur les Raspberry)", "JMRI (logiciel permettant de piloter des trains depuis une Raspberry)", "GitHub (versionner et centraliser les différents projets)", "Figma (expliquer l'architecture aux novices à l'aide de schémas)"],
-        images: []
+        images: ["mini_world.png", "mini_world2.png"]
     },
     {
-        id: 3,
+        id: 7,
         title: "Émulateur",
         type: "Projet personnel",
         desc: "Création d’un émulateur Chip-8 en C, qui simule toute l’architecture (registres, RAM...) et permet de lancer des ROM pour jouer à des jeux 2D, avec la bibliothèque SDL2.",
@@ -47,7 +62,7 @@ export const initialProjects = [
         images: ["emulateur.png"]
     },
     {
-        id: 4,
+        id: 6,
         title: "Classification d'arbres",
         type: "Projet scolaire",
         enterprise: "Université de Sherbrooke",
@@ -79,7 +94,7 @@ export const initialProjects = [
         images: ["systemes_repartis.png", "systemes_repartis2.png"]
     },
     {
-        id: 6,
+        id: 4,
         title: "Scène 3D animée",
         type: "Projet scolaire",
         enterprise: "Université de Sherbrooke",
@@ -95,7 +110,7 @@ export const initialProjects = [
         images: ["jeux.png"]
     },
     {
-        id: 7,
+        id: 3,
         title: "Application de covoiturage",
         type: "Projet scolaire",
         enterprise: "Université de Sherbrooke",
@@ -111,7 +126,7 @@ export const initialProjects = [
         images: ["charbonheur.png"]
     },
     {
-        id: 8,
+        id: 2,
         title: "Web scraping",
         type: "Projet scolaire",
         enterprise: "Université Savoie Mont Blanc",
@@ -127,7 +142,7 @@ export const initialProjects = [
         images: ["web_scraping.png", "web_scraping2.png"]
     },
     {
-        id: 9,
+        id: 1,
         title: "Agenda collaboratif",
         type: "Projet scolaire",
         enterprise: "Université Savoie Mont Blanc",
