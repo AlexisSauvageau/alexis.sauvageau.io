@@ -11,7 +11,7 @@ export const initialProjects = [
         icon: "icons/rom.svg",
         team: 1,
         languages: ["C++", "Assembleur"],
-        tools: ["MKDS Course Modifier (ouvrir la ROM du jeu et extraire ses fichiers)", "Nitro Studio (modifier les fichiers sonores de la ROM)", "Nitro Explorer (modifier la ROM en intégrant mes propres fichiers)"],
+        tools: ["MKDS Course Modifier (ouvrir la ROM du jeu et extraire ses fichiers)", "Ghidra (désassembler et modifier du code binaire)", "Nitro Studio (modifier les fichiers sonores de la ROM)", "Nitro Explorer (modifier la ROM en intégrant mes propres fichiers)"],
         images: []
     },
     {
